@@ -42,8 +42,6 @@ For this project, I plan to make a resource to locate and save all-gender bathro
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
-
 - [Wireframe: Mobile](https://i.imgur.com/rWpiaQj.jpg)
 - [Wireframe: Tablet](https://i.imgur.com/eb0OVeu.jpg)
 - [Wireframe: Desktop](https://i.imgur.com/IL2kPaG.jpg)
@@ -53,6 +51,7 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 ### MVP/PostMVP
 
 #### MVP
+
 - Fully functional restroom search by city
 	- User inputs city name
 	- Search returns result list
@@ -80,25 +79,24 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 | My List | Renders user's results they've added to their list, with a "remove from list" button |
 | About | Renders an "about all-gender restrooms" route (Post MVP) |
 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
 Unless otherwise noted, time is listed in hours:
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create React app and files for all components | H | 2 | | |
-| Basic Navbar & Footer | H | 2 | | |
-| Hamburger Nav Bar | H | 3 | | |
-| Set up basic React routing | H | 1 | | |
-| Make restroom API call through search form, parse important data | H | 4 | |  |
-| Display results | H | 3 | | |
-| Create detailed results card | H | 3 | | |
-| Create My List card | H | 2 | | |
-| CSS for Restroom Search page | H | 4 | | |
-| CSS for My List page | H | 2 | | |
-| Create "About" page with more info | L | 2 | | |
-| Change search to take in both city and state | L | 4 | | |
-| Total | H | 32 | | |
+| Create React app and files for all components | H | 2 | |
+| Basic Navbar & Footer | H | 2 | |
+| Hamburger Nav Bar | H | 3 | |
+| Set up basic React routing | H | 1 | |
+| Make restroom API call through search form, parse important data | H | 4 | |
+| Display results | H | 3 | |
+| Create detailed results card | H | 3 | |
+| Create My List card | H | 2 | |
+| CSS for Restroom Search page | H | 4 | |
+| CSS for My List page | H | 2 | |
+| Create "About" page with more info | L | 2 | |
+| Change search to take in both city and state | L | 4 | |
+| Total | H | 32 | |
 
 ## Additional Libraries
 TBD
@@ -107,7 +105,7 @@ TBD
 
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  Code snippet should not be greater than 10 lines of code.
 
-The below code is how the leaderboard is populated. The shorter the name, the more dots are added between the name and score. The font size is set progressively smaller for each entry.
+TBD
 
 ```
 
