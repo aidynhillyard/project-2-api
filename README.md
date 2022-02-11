@@ -83,7 +83,7 @@ For this project, I plan to make a resource to locate and save all-gender bathro
 Unless otherwise noted, time is listed in hours:
 
 | Component | Priority | Estimated Time | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
+| --- | :---: |  :---: | :---: |
 | Create React app and files for all components | H | 2 | |
 | Basic Navbar & Footer | H | 2 | |
 | Hamburger Nav Bar | H | 3 | |
