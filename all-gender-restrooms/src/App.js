@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import {Route, Link, Routes, Navigate} from "react-router-dom";
+import {useState, useEffect} from "react";
 import './App.css';
+import Header from './Components/Header'
+import Footer from './Components/Footer'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Header Component has Nav and header title */}
+      <Header />
+      <main>
+      <Routes>
+          <Route path="/restroomsearch" element={<RestroomSearch />} />
+          {/* The :name is a parameter we can now store */}
+          <Route path="/restroomsearch/:name" element={<RestroomSearch />} />
+          <Route path="/mylist" element={<MyList />} />
+          <Route path="/" element = {<Navigate to="/restroomsearch" />} />
+          <Route path="/restroom-search" element = {<Navigate to="/restroom-search" />} />
+          <Route path="/search" element = {<Navigate to="/restroom-search" />} />
+        </Routes>
+      </main>
+      {/* Footer has name and social media icons */}
+      <Footer />
     </div>
   );
 }
