@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+![Gif of two people holding trans pride signs](/images/ourtimeisnow.gif)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Overview
 
-## Available Scripts
+## Project Links
 
-In the project directory, you can run:
+- Placeholder for GitHub link when live
 
-### `npm start`
+## Project Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+For this project, I plan to make a resource to locate and save all-gender bathrooms.  Users will be able to use a form to put in their location, which will return a list of all-gender bathrooms in that area.  Users can then click on an item in the results to obtain more information (exact address, whether the bathroom is also ADA accessible and/or has a changing table).  From that information, users can save the bathroom to their list of locations, which can be accessed through a separate route.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## API
 
-### `npm test`
+[RefugeRestrooms](https://www.refugerestrooms.org/api/docs/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+```
+{
+    "id": 55788,
+    "name": "The C.H.A.P Store",
+    "street": "2020 Highway 13 East",
+    "city": "Burnsville",
+    "state": "MN",
+    "accessible": true,
+    "unisex": true,
+    "directions": "Go in and turn right",
+    "comment": "This is an Evangelical thrift store that plays Christian music, but they have converted their two single-stall restrooms to gender neutral. Free day-old baked goods are often available in the coffee area near the restrooms. ",
+    "latitude": 44.7900831,
+    "longitude": -93.2432451,
+    "created_at": "2020-03-05T23:32:07.491Z",
+    "updated_at": "2020-04-14T21:09:46.803Z",
+    "downvote": 0,
+    "upvote": 0,
+    "country": "US",
+    "changing_table": true,
+    "edit_id": 55788,
+    "approved": true
+  }
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Wireframes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Wireframe: Mobile](https://i.imgur.com/rWpiaQj.jpg)
+- [Wireframe: Tablet](https://i.imgur.com/eb0OVeu.jpg)
+- [Wireframe: Desktop](https://i.imgur.com/IL2kPaG.jpg)
+- [React Architecture](https://i.imgur.com/FL7Sak0.jpg)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### MVP/PostMVP
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### MVP
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Fully functional restroom search by city
+	- User inputs city name
+	- Search returns result list
+- Clicking an item in the results list populates a card with additional details
+- Card has a button to Add to My List, which adds the result to the My List route
+- My List page displays all results added to the My List, in card format, with a button to remove
+- Navbar with options that link to their corresponding routes
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### PostMVP
 
-## Learn More
+- "About" route that leads to an explanation of why all-gender bathrooms are important
+- More specific search functionality (instruct users to input city and state, not just city)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Components
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Component | Description | 
+| --- | :---: |  
+| App | Sets up app with React Router | 
+| Header | Renders the header, including the nav | 
+| Footer | Renders the footer |
+| Main | Contains Routes for content |
+| Restroom Search Form | Renders the search form |
+| Restroom Search Results | Renders restroom search results via API call |
+| Result Detail Card | Renders a card with additional details from the result and "add to list" button |
+| My List | Renders user's results they've added to their list, with a "remove from list" button |
+| About | Renders an "about all-gender restrooms" route (Post MVP) |
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Unless otherwise noted, time is listed in hours:
 
-### Analyzing the Bundle Size
+| Component | Priority | Estimated Time | Actual Time |
+| --- | :---: |  :---: | :---: |
+| Create React app and files for all components | H | 2 | |
+| Basic Navbar & Footer | H | 2 | |
+| Hamburger Nav Bar | H | 3 | |
+| Set up basic React routing | H | 1 | |
+| Make restroom API call through search form, parse important data | H | 4 | |
+| Display results | H | 3 | |
+| Create detailed results card | H | 3 | |
+| Create My List card | H | 2 | |
+| CSS for Restroom Search page | H | 4 | |
+| CSS for My List page | H | 2 | |
+| Create "About" page with more info | L | 2 | |
+| Change search to take in both city and state | L | 4 | |
+| Total | H | 32 | |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Additional Libraries
+TBD
 
-### Making a Progressive Web App
+## Code Snippet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  Code snippet should not be greater than 10 lines of code.
 
-### Advanced Configuration
+TBD
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
 
-### Deployment
+```
+...
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
