@@ -2,7 +2,7 @@ const Footer = () => {
 
     return (
         <div className="footer">
-            <h1>Footer has been rendered.</h1>
+            <p>Designed and coded by Aidyn Hillyard (zie/hir/hirs), 2022</p>
         </div>
     )
 }

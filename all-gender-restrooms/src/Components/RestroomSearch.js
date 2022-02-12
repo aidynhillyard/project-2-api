@@ -33,7 +33,7 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
     console.log(restroomList)
 
     return (
-        <div className="RestroomSearch">
+        <div className="restroom-search">
             <ul className="full-restroom-list">{listOfRestrooms}</ul>
             <RestroomDetailCard toggle={toggle}
             handleAddRestroomList={handleAddRestroomList}/>

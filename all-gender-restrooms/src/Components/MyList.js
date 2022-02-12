@@ -1,10 +1,19 @@
-const MyList = () => {
+const MyList = ({ restroomList, handleRemoveRestroomList }) => {
 
     // useState from App.js to add and remove
 
+    const populateList = restroomList.map((restroom, id) => {
+        return (
+            <div className="list-card" key={id}>
+                <p>{restroom.name}</p>
+                <button onClick={() => handleRemoveRestroomList(restroom)}>Remove from list</button>
+            </div>
+        )
+    })
+
     return (
         <div className="my-list">
-            <h1>My List was rendered.</h1>
+            {populateList}
         </div>
     )
 }
