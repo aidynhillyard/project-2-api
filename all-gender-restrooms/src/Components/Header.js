@@ -1,3 +1,5 @@
+import {Route, Link, Routes, Navigate} from "react-router-dom";
+
 const Header = () => {
 
     return (
@@ -5,7 +7,7 @@ const Header = () => {
             <nav>
                 <ul id="ul-nav">
                     <Link to="/restroomsearch" id="nav-restroom-search"><li className="header-li">Restroom Search</li></Link>
-                    <img src="" alt="" className="header-img" />
+                    <img src="/images/ourtimeisnow.gif" alt="The transgender symbol" className="header-img" />
                     <Link to="/mylist" id="nav-mylist"><li className="header-li">My List</li></Link>
                 </ul>
             </nav>
