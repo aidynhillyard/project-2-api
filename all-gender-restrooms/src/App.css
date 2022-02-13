@@ -16,7 +16,7 @@ a:hover {
 /* HEADER */
 
 .header {
-  padding: 0px 20px 0px 50px 0px;
+  padding: 0vh;
   background-color: #b3ffff;
 
 }
@@ -33,12 +33,12 @@ ul {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   justify-items: center;
-  padding: 20px;
-  border-bottom: 2px black solid;
+  padding: 2vh;
+  border-bottom: 0.3vh black solid;
 }
 
 #header-img {
-  height: 70px;
+  height: 7vh;
 }
 
 #nav-restroom-search {
@@ -66,43 +66,70 @@ ul {
 
 .header-text {
   background-color: #b3ffff;
-  padding: 20px;
-  margin: 0px;
+  padding: 2vh;
+  margin: 0vh;
 }
 
-/* MAIN */
+/* RESTROOM SEARCH */
+
+main {
+  background-color: #b3ffff;
+}
 
 .restroom-search {
   background-color: #b3ffff;
   display: flex;
   justify-content: space-between;
-  padding: 10px 0px;
+  padding: 2vh 0vh;
 }
 
 .restroom-detail-card {
-  margin: 5px 20px;
-  border: 3px  #00b3b3 solid;
+  margin: 2vh 3vh;
+  border: 0.3vh  #00b3b3 solid;
   background-color: white;
-  border-radius: 5px;
-  max-width: 200px;
-  max-height: 300px;
-  min-width: 80px;
-  padding: 5px;
+  border-radius: 0.7vh;
+  max-width: 20vh;
+  max-height: 35vh;
+  min-width: 15vh;
+  padding: 1vh;
   text-align: center;
 }
 
 .restroom-list {
   text-align: left;
-  padding: 5px 10px;
+  padding: 0.5vh 1vh;
   background-color: white;
-  border: 3px  #00b3b3 solid;
-  border-radius: 5px;
-  margin: 5px;
+  border: 0.3vh #00b3b3 solid;
+  border-radius: 0.7vh;
+  margin: 1vh;
+}
+
+/* MY LIST */
+
+.my-list {
+  display: flex;
+  margin: 0vh 4vh;
+  background-color: #b3ffff;
+  padding: 2vh 1vh;
+  text-align: center;
+}
+
+.list-card {
+  margin: 1vh 2vh;
+  border: 0.3vh  #00b3b3 solid;
+  background-color: white;
+  border-radius: 0.7vh;
+  max-width: 45vh;
+  max-height: 20vh;
+  min-height: 25vh;
+  padding: 1vh;
+  text-align: center;
 }
 
 /* FOOTER */
 
 .footer {
   background-color: #00b3b3;
-  padding: 15px
+  padding: 2vh;
+  border-top: 0.3vh black solid;
 }
