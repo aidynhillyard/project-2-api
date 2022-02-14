@@ -72,14 +72,19 @@ ul {
 
 /* RESTROOM SEARCH */
 
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 main {
   background-color: #b3ffff;
 }
 
 .restroom-search {
   background-color: #b3ffff;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
   padding: 2vh 0vh;
 }
 
