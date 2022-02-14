@@ -1,7 +1,7 @@
 import {useParams} from 'react-router';
 import {useState, useEffect} from 'react';
 
-const RestroomDetailCard = ({ toggle, handleAddRestroomList, keyword }) => {
+const RestroomDetailCard = ({ toggle, handleAddRestroomList }) => {
     const [singleRestroom, setSingleRestroom] = useState([])
 
     let params = useParams()
@@ -11,7 +11,7 @@ const RestroomDetailCard = ({ toggle, handleAddRestroomList, keyword }) => {
     }, [toggle])
 
     const getSingleRestroom = () => {
-        const url = `https://www.refugerestrooms.org/api/v1/restrooms/search?page=1&per_page=30&offset=0&query=${keyword}` 
+        const url = "https://www.refugerestrooms.org/api/v1/restrooms/search?page=1&per_page=30&offset=0&query=burnsville" 
             // (!params.name ? singleRestroom[0]?.name : params.name)
 
         fetch(url)
