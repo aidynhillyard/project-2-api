@@ -23,10 +23,10 @@ const RestroomDetailCard = ({ toggle, handleAddRestroomList }) => {
     const restroomList = singleRestroom.map((soloRestroom, id) => (
         <div className="restroom-detail-card">
             <h2><span className="center-align">{(soloRestroom?.name) ? (soloRestroom?.name) : ''}</span></h2>
-            <h3>{soloRestroom?.street ? soloRestroom?.street : ''}</h3>
-            <h3>{soloRestroom?.city ? soloRestroom?.city : ''}</h3>
-            <h3>{soloRestroom?.state ? soloRestroom?.state : ''}</h3>
-            <h3>Images for: Unisex, ADA, Changing Table</h3>
+            <p>{soloRestroom?.street ? soloRestroom?.street : ''}</p>
+            <p>{soloRestroom?.city ? soloRestroom?.city : ''}</p>
+            <p>{soloRestroom?.state ? soloRestroom?.state : ''}</p>
+            <p>Images for: Unisex, ADA, Changing Table</p>
             <button onClick={() => handleAddRestroomList(soloRestroom?.name)}>Add to List</button>
         </div>
     ))

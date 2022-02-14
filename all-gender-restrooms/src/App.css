@@ -84,7 +84,7 @@ main {
 
 .restroom-search {
   background-color: #b3ffff;
-  /* display: flex; */
+  display: flex;
   padding: 2vh 0vh;
 }
 
@@ -94,7 +94,7 @@ main {
   background-color: white;
   border-radius: 0.7vh;
   max-width: 20vh;
-  max-height: 35vh;
+  max-height: 41vh;
   min-width: 15vh;
   padding: 1vh;
   text-align: center;
