@@ -39,7 +39,7 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
         <div className="search-container">
           <form className="search-form" onSubmit={handleSubmit}>
             <label>Keyword: </label>
-            <input type="text" value={keyword} onChange={handleChange} />
+            <input type="text" placeholder="Enter a city or state" value={keyword} onChange={handleChange} />
             <input type="submit" value="Find Restroom Info" />
           </form>
           <div className="restroom-search">

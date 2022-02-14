@@ -11,7 +11,7 @@ const Header = () => {
                     <Link to="/mylist" id="nav-mylist"><li className="header-li">My Restroom List</li></Link>
                 </ul>
             </nav>
-            <h1 className="header-text">All-Gender Restrooms</h1>
+            <h1 className="header-text">Restroom Resource: Find All-Gender Restrooms</h1>
         </div>
     )
 }
