@@ -19,9 +19,9 @@ function App() {
   }
 
   // This removes an All-Gender Restroom from the user's list (My List)
-  const handleRemoveRestroomList = () => {
+  const handleRemoveRestroomList = (object) => {
     const newArray = [...restroomList];
-    const filteredArray = newArray.filter((name) => name !== name);
+    const filteredArray = newArray.filter((name) => name !== object);
     setRestroomList(filteredArray);
   }
 
