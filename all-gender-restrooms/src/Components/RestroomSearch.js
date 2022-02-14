@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import {Route, Link, Routes, Naviage} from 'react-router-dom'
+import {Route, Link, Routes, Navigate} from 'react-router-dom'
 import RestroomDetailCard from './RestroomDetailCard';
 
 const RestroomSearch = ({ handleAddRestroomList }) => {
