@@ -5,10 +5,10 @@ import RestroomDetailCard from './RestroomDetailCard';
 const RestroomSearch = ({ handleAddRestroomList }) => {
 
     // This will set useStates
-    // const [restroomList, setRestroomList] = useState([])
     const [toggle, setToggle] = useState(true)
     const [keyword, setKeyword] = useState('')
     const [restrooms, setRestrooms] = useState([])
+    const [restroomId, setRestroomId] = useState('')
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -28,12 +28,15 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
     const restroomList = restrooms.map((restroom, id) => (
         <li className="restroom-list" key={id}>
             {/* On-click toggle will toggle the RestroomDetailCard Component */}
-            <Link onClick={() => setToggle(!toggle)} to={`/restroomsearch/${restroom.name}`} key={id}>{restroom.name}</Link>
+            <button onClick={(event) => {
+                setRestroomId(id)
+                setToggle(!toggle)
+            }}
+            key={id}>{restroom.name}</button>
         </li>
     ))
 
-    //   console.log(restrooms.name)
-    //   console.log(restroomList)
+      console.log(restroomList)
 
       return (
         <div className="search-container">
@@ -44,9 +47,7 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
           </form>
           <div className="restroom-search">
             <ul>{restroomList}</ul>
-            {/* <h2>Restroom Name: {restrooms[0]?.name}</h2>
-            <h3>Restroom City: {restrooms[0]?.city}</h3> */}
-            <RestroomDetailCard toggle={toggle} handleAddRestroomList={handleAddRestroomList}/>
+            <RestroomDetailCard toggle={toggle} handleAddRestroomList={handleAddRestroomList} restrooms={restrooms} restroomId={restroomId} />
           </div>
         </div>
       );

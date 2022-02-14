@@ -25,11 +25,9 @@ function App() {
     setRestroomList(filteredArray);
   }
 
-  // console.log(restroomList)
-
   return (
     <div className="App">
-      {/* Header Component has Nav and header title */}
+      {/* Header Component has Nav and Header title */}
       <Header />
       <main>
       <Routes>
