@@ -84,16 +84,15 @@ Unless otherwise noted, time is listed in hours:
 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: |
-| Create React app and files for all components | H | 2 | |
-| Basic Navbar & Footer | H | 2 | |
-| Hamburger Nav Bar | H | 3 | |
-| Set up basic React routing | H | 1 | |
-| Make restroom API call through search form, parse important data | H | 4 | |
-| Display results | H | 3 | |
-| Create detailed results card | H | 3 | |
-| Create My List card | H | 2 | |
-| CSS for Restroom Search page | H | 4 | |
-| CSS for My List page | H | 2 | |
+| Create React app and files for all components | H | 2 | 1.5 |
+| Basic Navbar & Footer | H | 2 | 1 |
+| Set up basic React routing | H | 1 | 30 min |
+| Make restroom API call through search form, parse important data | H | 4 | 3 |
+| Display results | H | 3 | 2 |
+| Create detailed results card | H | 3 | 4 |
+| Create My List card | H | 2 | 1 |
+| CSS for Restroom Search page | H | 4 | 3 |
+| CSS for My List page | H | 2 | 1 |
 | Create "About" page with more info | L | 2 | |
 | Change search to take in both city and state | L | 4 | |
 | Total | H | 32 | |
