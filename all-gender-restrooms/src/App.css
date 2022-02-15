@@ -1,23 +1,31 @@
+/*
+******************
+U N I V E R S A L
+******************
+*/
+
 .App {
   text-align: center;
   font-family: 'Bubbler One', sans-serif;
 }
 
 html {
-  font-size: 120%
+  font-size: 130%
 }
 
 body {
-  font-size: 0.75em;
+  font-size: 0.90em;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.2em;
 }
 
-/* ***** */
-/* LINKS */
-/* ***** */
+/*
+**********
+L I N K S
+**********
+*/
 
 a {
   text-decoration: none;
@@ -28,9 +36,11 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ****** */
-/* HEADER */
-/* ****** */
+/*
+************
+H E A D E R
+************
+*/
 
 nav {
   
@@ -94,9 +104,11 @@ ul {
   margin: 0vh;
 }
 
-/* *************** */
-/* RESTROOM SEARCH */
-/* *************** */
+/*
+******************************
+R E S T R O O M - S E A R C H
+******************************
+*/
 
 li {
   list-style-type: none;
@@ -139,6 +151,7 @@ label {
   background-color: #f2e6ff;
   border-radius: 0.7vh;
   padding: 1vh;
+  max-width: 32vh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -174,9 +187,12 @@ label {
   border-radius: 0.7vh;
   margin: 1vh;
 }
-/* ******* */
-/* MY LIST */
-/* ******* */
+
+/*
+**************
+M Y - L I S T
+**************
+*/
 
 .my-list {
   display: flex;
@@ -202,9 +218,11 @@ label {
   justify-content: space-between;
 }
 
-/* ****** */
-/* FOOTER */
-/* ****** */
+/*
+************
+F O O T E R
+************
+*/
 
 .footer {
   background-color: #cc99ff;
@@ -212,4 +230,52 @@ label {
   border-top: 0.3vh solid black;
   font-size: 1.2em;
   font-weight: 600;
+}
+
+/*
+**********************************
+R E S P O N S I V E - T A B L E T
+**********************************
+*/
+
+@media only screen and (min-width: 768px) {
+
+  /* Restroom Search */
+
+  .restroom-detail-card {
+      max-width: 42vh;
+      min-width: 32vh;
+    }
+
+}
+
+/*
+************************************
+R E S P O N S I V E - D E S K T O P
+************************************
+*/
+
+@media only screen and (min-width: 1024px) {
+
+  /* Universal */
+  
+  html {
+    font-size: 130%
+  }
+  
+  body {
+    font-size: 0.75em;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+
+  /* Restroom Search */
+
+  .restroom-detail-card {
+      max-width: 48vh;
+      min-width: 42vh;
+      margin: 3vh 15vh;
+  }
 }
