@@ -15,7 +15,9 @@ h1 {
   font-size: 2em;
 }
 
+/* ***** */
 /* LINKS */
+/* ***** */
 
 a {
   text-decoration: none;
@@ -26,7 +28,9 @@ a:hover {
   text-decoration: underline;
 }
 
+/* ****** */
 /* HEADER */
+/* ****** */
 
 nav {
   
@@ -90,7 +94,9 @@ ul {
   margin: 0vh;
 }
 
+/* *************** */
 /* RESTROOM SEARCH */
+/* *************** */
 
 li {
   list-style-type: none;
@@ -132,9 +138,6 @@ label {
   border: 0.3vh solid #a64dff;
   background-color: #f2e6ff;
   border-radius: 0.7vh;
-  max-width: 20vh;
-  max-height: 45vh;
-  min-width: 15vh;
   padding: 1vh;
   text-align: center;
   display: flex;
@@ -142,10 +145,21 @@ label {
   justify-content: space-between;
 }
 
+.icon-container {
+  padding-bottom: 1vh;
+}
+
+.card-icon {
+  height: 5vh;
+  margin: 0 auto;
+  padding: 0.6vh;
+}
+
 .detail-card-add-button {
   background-color: #6600cc;
   color: white;
   border-radius: 0.7vh;
+  padding: 0.5vh 0vh;
 }
 
 .full-restroom-list {
@@ -160,8 +174,9 @@ label {
   border-radius: 0.7vh;
   margin: 1vh;
 }
-
+/* ******* */
 /* MY LIST */
+/* ******* */
 
 .my-list {
   display: flex;
@@ -187,7 +202,9 @@ label {
   justify-content: space-between;
 }
 
+/* ****** */
 /* FOOTER */
+/* ****** */
 
 .footer {
   background-color: #cc99ff;
