@@ -1,3 +1,6 @@
+// import wheelchair from '../images/iconwheelchair.png'
+import test from '../images/ourtimeisnow.gif'
+
 const RestroomDetailCard = ({ handleAddRestroomList, restrooms, restroomId }) => {
 
     const restroomList = restrooms?.map((soloRestroom, id) => (
