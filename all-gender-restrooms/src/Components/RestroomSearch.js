@@ -26,13 +26,13 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
       };
 
     const restroomList = restrooms.map((restroom, id) => (
-        <li className="restroom-list" key={id}>
+        <li className="restroom-list-item" key={id}>
             {/* On-click toggle will toggle the RestroomDetailCard Component */}
-            <button onClick={(event) => {
+            <a onClick={(event) => {
                 setRestroomId(id)
                 setToggle(!toggle)
             }}
-            key={id}>{restroom.name}</button>
+            key={id}>{restroom.name}</a>
         </li>
     ))
 
@@ -46,7 +46,7 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
             <input type="submit" value="Find Restroom Info" />
           </form>
           <div className="restroom-search">
-            <ul>{restroomList}</ul>
+            <ul className="full-restroom-list">{restroomList}</ul>
             <RestroomDetailCard toggle={toggle} handleAddRestroomList={handleAddRestroomList} restrooms={restrooms} restroomId={restroomId} />
           </div>
         </div>
