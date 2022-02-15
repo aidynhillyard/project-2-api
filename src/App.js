@@ -31,7 +31,7 @@ function App() {
       <Header />
       <main>
       <Routes>
-          <Route path="/restroomsearch" element={<RestroomSearch handleAddRestroomList={handleAddRestroomList}/>} />
+          <Route path="/restroomsearch" element={<RestroomSearch handleAddRestroomList={handleAddRestroomList} />} />
           {/* The :name is a parameter we can now store */}
           <Route path="/restroomsearch/:name" element={<RestroomSearch handleAddRestroomList={handleAddRestroomList}/>} />
           <Route path="/mylist" element={<MyList restroomList={restroomList} handleRemoveRestroomList={handleRemoveRestroomList}/>} />

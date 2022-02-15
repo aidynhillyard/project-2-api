@@ -1,4 +1,4 @@
-const RestroomDetailCard = ({ toggle, handleAddRestroomList, restrooms, restroomId }) => {
+const RestroomDetailCard = ({ handleAddRestroomList, restrooms, restroomId }) => {
 
     const restroomList = restrooms?.map((soloRestroom, id) => (
             <div className="restroom-detail-card" key={id} style={{ display: (restroomId === id) ? "flex" : "none" }}>

@@ -1,31 +1,28 @@
 import {useState, useEffect} from 'react';
-import {Route, Link, Routes, Navigate} from 'react-router-dom'
 import RestroomDetailCard from './RestroomDetailCard';
+import Loading from './Loading';
 
 const RestroomSearch = ({ handleAddRestroomList }) => {
 
-    // This will set useStates
+    // useStates
     const [toggle, setToggle] = useState(true)
     const [keyword, setKeyword] = useState('')
     const [restrooms, setRestrooms] = useState([])    
     const [restroomId, setRestroomId] = useState('')
 
+    // useEffects
     useEffect(()=>{
-
         const restroomData = localStorage.getItem('restroomData')
-        
-        if(restroomData){
-          setRestrooms(JSON.parse(restroomData))
-         }
-        
+          if(restroomData){
+            setRestrooms(JSON.parse(restroomData))
+          }
         },[])
         
     useEffect(()=>{
-        
-          localStorage.setItem('restroomData',JSON.stringify(restrooms))
-        
+        localStorage.setItem('restroomData',JSON.stringify(restrooms))
         })
 
+    // handleSubmit
     const handleSubmit = (event) => {
         event.preventDefault();
     
@@ -37,6 +34,7 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
             .catch(() => console.log("There are no search results."))
     }
 
+    // handleChange
     const handleChange = (event) => {
         setKeyword(event.target.value);
       };
@@ -59,9 +57,12 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
             <input id="input" type="text" placeholder="Enter a city or state" value={keyword} onChange={handleChange} />
             <input type="submit" value="Find Restroom Info" />
           </form>
+          <div className="loading-component" style={{ display: (restrooms === []) ? "flex" : "none" }}>
+            <Loading />
+          </div>
           <div className="restroom-search">
             <ul className="full-restroom-list">{restroomList}</ul>
-            <RestroomDetailCard toggle={toggle} handleAddRestroomList={handleAddRestroomList} restrooms={restrooms} restroomId={restroomId} />
+            <RestroomDetailCard handleAddRestroomList={handleAddRestroomList} restrooms={restrooms} restroomId={restroomId} />
           </div>
         </div>
       );
