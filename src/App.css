@@ -10,7 +10,8 @@ U N I V E R S A L
 }
 
 html {
-  font-size: 130%
+  font-size: 130%;
+  background-color: #cc99ff;
 }
 
 body {
@@ -42,10 +43,6 @@ H E A D E R
 ************
 */
 
-nav {
-  
-}
-
 .header {
   padding: 0vh;
 }
@@ -73,6 +70,10 @@ ul {
 
 #header-img {
   height: 7vh;
+  display: grid;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  align-self: end;
 }
 
 #nav-restroom-search {
@@ -81,13 +82,6 @@ ul {
   grid-row: 1 / 2;
   align-self: end;
   justify-self: end;
-}
-
-#header-image {
-  display: grid;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  align-self: end;
 }
 
 #nav-mylist {

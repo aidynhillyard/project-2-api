@@ -1,6 +1,5 @@
 import {useState, useEffect} from 'react';
 import RestroomDetailCard from './RestroomDetailCard';
-import Loading from './Loading';
 
 const RestroomSearch = ({ handleAddRestroomList }) => {
 
@@ -57,9 +56,6 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
             <input id="input" type="text" placeholder="Enter a city or state" value={keyword} onChange={handleChange} />
             <input type="submit" value="Find Restroom Info" />
           </form>
-          <div className="loading-component" style={{ display: (restrooms === []) ? "flex" : "none" }}>
-            <Loading />
-          </div>
           <div className="restroom-search">
             <ul className="full-restroom-list">{restroomList}</ul>
             <RestroomDetailCard handleAddRestroomList={handleAddRestroomList} restrooms={restrooms} restroomId={restroomId} />

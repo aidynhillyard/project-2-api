@@ -1,5 +1,6 @@
-// import wheelchair from '../images/iconwheelchair.png'
-import test from '../images/ourtimeisnow.gif'
+import wheelchair from '../images/iconwheelchair.png'
+import transsymbol from '../images/icontransgender.png'
+import child from '../images/iconchild.png'
 
 const RestroomDetailCard = ({ handleAddRestroomList, restrooms, restroomId }) => {
 
@@ -12,9 +13,9 @@ const RestroomDetailCard = ({ handleAddRestroomList, restrooms, restroomId }) =>
                     <p>{soloRestroom?.state ? soloRestroom?.state : ''}</p>
                 </div>
                 <div className="icon-container">
-                    <img src="https://images2.imgbox.com/25/4a/BBeL0yxC_o.png" alt="" className="card-icon" title="Accessible" style={{ display: (soloRestroom?.accessible === true) ? "block" : "none" }} />
-                    <img src="https://images2.imgbox.com/62/b6/zyZaFkGl_o.png" alt="" className="card-icon" title="Unisex / Gender Neutral" style={{ display: (soloRestroom?.unisex === true) ? "block" : "none" }} />
-                    <img src="https://images2.imgbox.com/53/77/qnUB46Pf_o.png" alt="" className="card-icon" title="Changing Table" style={{ display: (soloRestroom?.changing_table === true) ? "block" : "none" }} />
+                    <img src={wheelchair} alt="Icon of an active wheelchair user" className="card-icon" title="Accessible" style={{ display: (soloRestroom?.accessible === true) ? "block" : "none" }} />
+                    <img src={transsymbol} alt="Icon of the transgender symbol" className="card-icon" title="Unisex / Gender Neutral" style={{ display: (soloRestroom?.unisex === true) ? "block" : "none" }} />
+                    <img src={child} alt="Icon of a child" className="card-icon" title="Changing Table" style={{ display: (soloRestroom?.changing_table === true) ? "block" : "none" }} />
                 </div>
                 <button className="detail-card-add-button" onClick={() => handleAddRestroomList(soloRestroom?.name)}>Add to List</button>
             </div>
