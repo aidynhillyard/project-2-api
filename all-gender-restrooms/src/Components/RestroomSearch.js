@@ -36,8 +36,6 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
         </li>
     ))
 
-      console.log(restroomList)
-
       return (
         <div className="search-container">
           <form className="search-form" onSubmit={handleSubmit}>

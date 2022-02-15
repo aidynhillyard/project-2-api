@@ -125,13 +125,19 @@ label {
   background-color: #f2e6ff;
   border-radius: 0.7vh;
   max-width: 20vh;
-  max-height: 41vh;
+  max-height: 45vh;
   min-width: 15vh;
   padding: 1vh;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+
+.detail-card-add-button {
+  background-color: #6600cc;
+  color: white;
+  border-radius: 0.7vh;
 }
 
 .full-restroom-list {
@@ -151,9 +157,10 @@ label {
 
 .my-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 0vh 4vh;
-  background-color: #f2e6ff;
+  background-color: white;
   padding: 2vh 1vh;
   text-align: center;
 }
@@ -161,7 +168,7 @@ label {
 .list-card {
   margin: 1vh 2vh;
   border: 0.3vh solid #a64dff;
-  background-color: white;
+  background-color: #f2e6ff;
   border-radius: 0.7vh;
   width: 20vh;
   height: 20vh;
