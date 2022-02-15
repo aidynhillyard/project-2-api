@@ -101,14 +101,37 @@ Unless otherwise noted, time is listed in hours:
 ## Additional Libraries
 TBD
 
+## Citations of Outside Sources
+
+### Case 1: Changing outline color on input/textarea focus
+
+To change the `outline color` on my `input:focus` and `textarea:focus` in CSS, I followed this guide from StackOverflow: [link](https://stackoverflow.com/questions/16156594/how-to-change-border-color-of-textarea-on-focus).
+
+### Case 2: Using `useEffect` to set up `localStorage`
+
+To save the data from the form submit when changing between my routes, I followed this guide from Gautham Vijayan: [link](https://dev.to/gautham495/how-to-persist-data-to-localstorage-in-react-with-hooks-6ma) -- see below for code snippet.
+
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  Code snippet should not be greater than 10 lines of code.
+Here are some brief code snippets of functionality that I'm proud of and a brief description.
 
-TBD
-
+Using `useEffect` to set up `localStorage` to store form data between routes:
 ```
+useEffect(()=>{
 
+        const restroomData = localStorage.getItem('restroomData')
+        
+        if(restroomData){
+          setRestrooms(JSON.parse(restroomData))
+         }
+        
+        },[])
+        
+    useEffect(()=>{
+        
+          localStorage.setItem('restroomData',JSON.stringify(restrooms))
+        
+        })
 ```
 ...
 ```

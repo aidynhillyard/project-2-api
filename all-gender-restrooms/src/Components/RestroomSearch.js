@@ -7,8 +7,24 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
     // This will set useStates
     const [toggle, setToggle] = useState(true)
     const [keyword, setKeyword] = useState('')
-    const [restrooms, setRestrooms] = useState([])
+    const [restrooms, setRestrooms] = useState([])    
     const [restroomId, setRestroomId] = useState('')
+
+    useEffect(()=>{
+
+        const restroomData = localStorage.getItem('restroomData')
+        
+        if(restroomData){
+          setRestrooms(JSON.parse(restroomData))
+         }
+        
+        },[])
+        
+    useEffect(()=>{
+        
+          localStorage.setItem('restroomData',JSON.stringify(restrooms))
+        
+        })
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -40,7 +56,7 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
         <div className="search-container">
           <form className="search-form" onSubmit={handleSubmit}>
             <label>Keyword: </label>
-            <input type="text" placeholder="Enter a city or state" value={keyword} onChange={handleChange} />
+            <input id="input" type="text" placeholder="Enter a city or state" value={keyword} onChange={handleChange} />
             <input type="submit" value="Find Restroom Info" />
           </form>
           <div className="restroom-search">

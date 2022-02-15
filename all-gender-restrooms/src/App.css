@@ -109,6 +109,14 @@ input {
   border-radius: 0.5vh;
 }
 
+input:focus {
+  outline-color: #a64dff;
+}
+
+textarea:focus {
+  outline-color: #a64dff;
+}
+
 label {
   font-weight: 900;
 }
