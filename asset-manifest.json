@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/restroomresource/static/css/main.31cf0d8a.css",
-    "main.js": "/restroomresource/static/js/main.92f4edc2.js",
+    "main.js": "/restroomresource/static/js/main.35b6ddc3.js",
     "static/js/787.8761912a.chunk.js": "/restroomresource/static/js/787.8761912a.chunk.js",
     "static/media/transgendersymbolheader.png": "/restroomresource/static/media/transgendersymbolheader.d970ad267f379bfb5c93.png",
     "static/media/icongithub.png": "/restroomresource/static/media/icongithub.404d7ecf509b8e802a50.png",
     "static/media/iconenvelope.png": "/restroomresource/static/media/iconenvelope.84a62adfce1a22b59be6.png",
     "index.html": "/restroomresource/index.html",
     "main.31cf0d8a.css.map": "/restroomresource/static/css/main.31cf0d8a.css.map",
-    "main.92f4edc2.js.map": "/restroomresource/static/js/main.92f4edc2.js.map",
+    "main.35b6ddc3.js.map": "/restroomresource/static/js/main.35b6ddc3.js.map",
     "787.8761912a.chunk.js.map": "/restroomresource/static/js/787.8761912a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31cf0d8a.css",
-    "static/js/main.92f4edc2.js"
+    "static/js/main.35b6ddc3.js"
   ]
 }
