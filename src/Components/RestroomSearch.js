@@ -1,10 +1,11 @@
 import {useState, useEffect} from 'react';
 import RestroomDetailCard from './RestroomDetailCard';
+import Loading from './Loading';
 
 const RestroomSearch = ({ handleAddRestroomList }) => {
 
     // useStates
-    const [toggle, setToggle] = useState(true)
+    const [toggle, setToggle] = useState(false)
     const [keyword, setKeyword] = useState('')
     const [restrooms, setRestrooms] = useState([])    
     const [restroomId, setRestroomId] = useState('')
@@ -38,14 +39,28 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
         setKeyword(event.target.value);
       };
 
+    // handleClearList
+    const handleClearList = () => {
+        setRestrooms([]);
+    }
+    
+    // handleLoading
+    const handleLoading = () => {
+        if (restrooms === []) {
+          setToggle(true)
+        } else {
+          setToggle(false)
+        }
+    }
+
     const restroomList = restrooms.map((restroom, id) => (
         <li className="restroom-list-item" key={id} >
             {/* On-click toggle will toggle the RestroomDetailCard Component */}
             <a onClick={(event) => {
-                setRestroomId(id)
                 setToggle(!toggle)
+                setRestroomId(id)
             }}
-            key={id}>{restroom.name ? restroom.name : "Loading..."}</a>
+            key={id}>{restroom.name}</a>
         </li>
     ))
 
@@ -57,6 +72,10 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
             <input id="input" type="text" placeholder="Enter a city or state" value={keyword} onChange={handleChange} />
             <input type="submit" value="Find Restroom Info" className="purple-button"/>
           </form>
+          <button onClick={handleClearList}>Clear Search Results</button>
+          <div className="loading-container" style={{ display: toggle ? "block" : "none"}}>
+            <Loading />
+          </div>
           <div className="restroom-search">
             <ul className="full-restroom-list">{restroomList}</ul>
             <RestroomDetailCard handleAddRestroomList={handleAddRestroomList} restrooms={restrooms} restroomId={restroomId} />
@@ -66,3 +85,6 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
 }
 
 export default RestroomSearch;
+
+// Failed ternary
+// {restrooms.name ? restroomList : "Loading..."}

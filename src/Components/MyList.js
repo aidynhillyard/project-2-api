@@ -7,7 +7,6 @@ const MyList = ({ restroomList, soloRestroom, handleRemoveRestroomList }) => {
     // useState from App.js to add and remove
 
     const populateList = restroomList.map((restroom, id) => {
-        console.log(restroom.directions)
         return (
             <div className="list-card" key={id}>
                 <li className="li-my-list, bold">{restroom.name}</li>
