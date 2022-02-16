@@ -17,7 +17,7 @@ const RestroomDetailCard = ({ handleAddRestroomList, restrooms, restroomId }) =>
                     <img src={transsymbol} alt="Icon of the transgender symbol" className="card-icon" title="Unisex / Gender Neutral" style={{ display: (soloRestroom?.unisex === true) ? "block" : "none" }} />
                     <img src={child} alt="Icon of a child" className="card-icon" title="Changing Table" style={{ display: (soloRestroom?.changing_table === true) ? "block" : "none" }} />
                 </div>
-                <button className="detail-card-add-button" onClick={() => handleAddRestroomList(soloRestroom?.name)}>Add to List</button>
+                <button className="detail-card-add-button" onClick={() => handleAddRestroomList(soloRestroom?.name, soloRestroom?.street, soloRestroom?.city, soloRestroom?.state, soloRestroom?.directions, soloRestroom?.comment, soloRestroom?.accessible, soloRestroom?.unisex, soloRestroom?.changing_table)}>Add to List</button>
             </div>
         ))
 

@@ -1,0 +1,47 @@
+/*
+**********************************
+R E S P O N S I V E - T A B L E T
+**********************************
+*/
+
+@media only screen and (min-width: 768px) {
+
+    /* Restroom Search */
+  
+    .restroom-detail-card {
+        max-width: 42vh;
+        min-width: 32vh;
+      }
+  
+  }
+  
+  /*
+  ************************************
+  R E S P O N S I V E - D E S K T O P
+  ************************************
+  */
+  
+  @media only screen and (min-width: 1024px) {
+  
+    /* Universal */
+    
+    html {
+      font-size: 130%
+    }
+    
+    body {
+      font-size: 0.75em;
+    }
+    
+    h1 {
+      font-size: 2em;
+    }
+  
+    /* Restroom Search */
+  
+    .restroom-detail-card {
+        max-width: 48vh;
+        min-width: 42vh;
+        margin: 3vh 15vh;
+    }
+  }

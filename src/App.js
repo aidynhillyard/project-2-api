@@ -1,6 +1,7 @@
 import {Route, Link, Routes, Navigate} from 'react-router-dom';
 import {useState} from "react";
 import './App.css';
+import './responsive.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import RestroomSearch from './Components/RestroomSearch';
@@ -13,9 +14,9 @@ function App() {
   const [restroomList, setRestroomList] = useState([])
 
   // This adds an All-Gender Restroom to the user's list (My List)
-  const handleAddRestroomList = (name) => {
+  const handleAddRestroomList = (name, street, city, state, directions, comment, accessible, unisex, changing_table) => {
     const newArray = [...restroomList];
-    newArray.push({ name });
+    newArray.push({ name, street, city, state, directions, comment, accessible, unisex, changing_table });
     setRestroomList(newArray);
   }
 
