@@ -1,3 +1,7 @@
+import github from '../images/icongithub.png';
+import email from '../images/iconemail.png';
+import linkedin from '../images/linkedin.png';
+
 const Footer = () => {
 
     return (

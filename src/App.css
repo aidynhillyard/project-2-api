@@ -143,6 +143,10 @@ label {
   font-weight: 900;
 }
 
+#clear-button {
+  margin: 1vh;
+}
+
 .header-text-search {
   background-color: white;
   padding: 4vh;

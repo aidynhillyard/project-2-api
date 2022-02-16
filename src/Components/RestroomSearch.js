@@ -32,6 +32,8 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
             .then((response) => response.json())
             .then((data) => setRestrooms(data))
             .catch(() => console.log("There are no search results."))
+        
+        handleLoading();
     }
 
     // handleChange
@@ -41,15 +43,16 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
 
     // handleClearList
     const handleClearList = () => {
-        setRestrooms([]);
+        setRestrooms([])
+        setKeyword('');
     }
     
     // handleLoading
     const handleLoading = () => {
         if (restrooms === []) {
-          setToggle(true)
+          setToggle(!toggle)
         } else {
-          setToggle(false)
+          setToggle(toggle)
         }
     }
 
@@ -57,14 +60,14 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
         <li className="restroom-list-item" key={id} >
             {/* On-click toggle will toggle the RestroomDetailCard Component */}
             <a onClick={(event) => {
-                setToggle(!toggle)
-                setRestroomId(id)
+                setRestroomId(id);
             }}
             key={id}>{restroom.name}</a>
         </li>
     ))
-
+    console.log(toggle)
       return (
+        
         <div className="search-container">
           <h1 className="header-text-search">Restroom Resource: Find All-Gender Restrooms</h1>
           <form className="search-form" onSubmit={handleSubmit}>
@@ -72,7 +75,7 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
             <input id="input" type="text" placeholder="Enter a city or state" value={keyword} onChange={handleChange} />
             <input type="submit" value="Find Restroom Info" className="purple-button"/>
           </form>
-          <button className="purple-button" onClick={handleClearList}>Clear Search Results</button>
+          <button id="clear-button" className="purple-button" onClick={handleClearList}>Clear Search Results</button>
           <div className="loading-container" style={{ display: toggle ? "block" : "none"}}>
             <Loading />
           </div>
