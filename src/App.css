@@ -202,6 +202,11 @@ label {
   margin: 1vh;
 }
 
+.instructions {
+  text-align: left;
+  padding: 1vh;
+}
+
 /*
 **************
 M Y - L I S T
