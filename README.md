@@ -1,4 +1,4 @@
-![Animated gif with art of two people of color holding trans pride signs that read 'our time is now' and 'for trans lives'](/src/images/ourtimeisnow.gif)
+![Animated gif with art of two people of color holding trans pride signs that read 'our time now' and 'for trans lives'](/src/images/ourtimeisnow.gif)
 
 # Project Overview
 
