@@ -8,11 +8,13 @@ const Header = () => {
             <nav>
                 <ul id="ul-nav">
                     <Link to="/restroomsearch" id="nav-restroom-search"><li className="header-li">Restroom Search</li></Link>
-                    <img src={header} alt="The transgender symbol" id="header-img" />
+                    <div id="nav-about">
+                        <img src={header} alt="The transgender symbol" id="header-img" /><Link to="/about"><li id="about-text" className="header-li">About</li></Link>
+                    </div>
                     <Link to="/mylist" id="nav-mylist"><li className="header-li">My Restroom List</li></Link>
                 </ul>
             </nav>
-            <h1 className="header-text">Restroom Resource: Find All-Gender Restrooms</h1>
+            
         </div>
     )
 }

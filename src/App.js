@@ -1,10 +1,11 @@
-import {Route, Link, Routes, Navigate} from "react-router-dom";
-import {useState, useEffect} from "react";
+import {Route, Link, Routes, Navigate} from 'react-router-dom';
+import {useState} from "react";
 import './App.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import RestroomSearch from "./Components/RestroomSearch";
-import MyList from "./Components/MyList";
+import RestroomSearch from './Components/RestroomSearch';
+import MyList from './Components/MyList';
+import About from './Components/About';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
       <main>
       <Routes>
           <Route path="/restroomsearch" element={<RestroomSearch handleAddRestroomList={handleAddRestroomList} />} />
+          <Route path="/about" element={<About />} />
           {/* The :name is a parameter we can now store */}
           <Route path="/restroomsearch/:name" element={<RestroomSearch handleAddRestroomList={handleAddRestroomList}/>} />
           <Route path="/mylist" element={<MyList restroomList={restroomList} handleRemoveRestroomList={handleRemoveRestroomList}/>} />

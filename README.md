@@ -1,4 +1,4 @@
-![Gif of two people holding trans pride signs](/images/ourtimeisnow.gif)
+![Gif of two people holding trans pride signs](/src/images/ourtimeisnow.gif)
 
 # Project Overview
 
@@ -109,6 +109,10 @@ To change the `outline color` on my `input:focus` and `textarea:focus` in CSS, I
 ### Case 2: Using `useEffect` to set up `localStorage`
 
 To save the data from the form submit when changing between my routes, I followed this guide from Gautham Vijayan: [link](https://dev.to/gautham495/how-to-persist-data-to-localstorage-in-react-with-hooks-6ma) -- see below for code snippet.
+
+### Case 3: Using images in React
+
+I followed this guide [link](https://stackoverflow.com/questions/39999367/how-do-i-reference-a-local-image-in-react) to import images into React in order to use local images instead of internet hosting.
 
 ## Code Snippet
 

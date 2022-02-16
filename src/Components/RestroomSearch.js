@@ -51,6 +51,7 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
 
       return (
         <div className="search-container">
+          <h1 className="header-text-search">Restroom Resource: Find All-Gender Restrooms</h1>
           <form className="search-form" onSubmit={handleSubmit}>
             <label>Keyword: </label>
             <input id="input" type="text" placeholder="Enter a city or state" value={keyword} onChange={handleChange} />
