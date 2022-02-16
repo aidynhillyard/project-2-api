@@ -202,6 +202,8 @@ M Y - L I S T
 
 .my-list {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0vh 4vh;

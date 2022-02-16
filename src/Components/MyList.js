@@ -19,7 +19,7 @@ const MyList = ({ restroomList, soloRestroom, handleRemoveRestroomList }) => {
     return (
         <div className="my-list">
             <h1 className="header-text">Restroom Resource: My List of Restrooms</h1>
-            {populateList}        
+            {populateList} 
         </div>
     )
 }

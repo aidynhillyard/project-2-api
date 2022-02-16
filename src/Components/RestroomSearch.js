@@ -39,13 +39,13 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
       };
 
     const restroomList = restrooms.map((restroom, id) => (
-        <li className="restroom-list-item" key={id}>
+        <li className="restroom-list-item" key={id} >
             {/* On-click toggle will toggle the RestroomDetailCard Component */}
             <a onClick={(event) => {
                 setRestroomId(id)
                 setToggle(!toggle)
             }}
-            key={id}>{restroom.name}</a>
+            key={id}>{restroom.name ? restroom.name : "Loading..."}</a>
         </li>
     ))
 
