@@ -72,7 +72,7 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
             <input id="input" type="text" placeholder="Enter a city or state" value={keyword} onChange={handleChange} />
             <input type="submit" value="Find Restroom Info" className="purple-button"/>
           </form>
-          <button onClick={handleClearList}>Clear Search Results</button>
+          <button className="purple-button" onClick={handleClearList}>Clear Search Results</button>
           <div className="loading-container" style={{ display: toggle ? "block" : "none"}}>
             <Loading />
           </div>
