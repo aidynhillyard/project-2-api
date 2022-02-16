@@ -6,7 +6,7 @@ U N I V E R S A L
 
 .App {
   text-align: center;
-  font-family: 'Bubbler One', sans-serif;
+  font-family: "Bubbler One", sans-serif;
 }
 
 html {
@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-size: 0.90em;
+  font-size: 0.9em;
 }
 
 h1 {
@@ -196,7 +196,7 @@ label {
 .restroom-list-item {
   text-align: left;
   padding: 0.5vh 1vh;
-  background-color:  #f2e6ff;
+  background-color: #f2e6ff;
   border: 0.3vh solid #a64dff;
   border-radius: 0.7vh;
   margin: 1vh;
@@ -273,3 +273,13 @@ F O O T E R
   font-weight: 600;
 }
 
+.social-media-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.social-media-icon {
+  height: 2.75vh;
+  padding: 1vh 3vh 0vh 3vh;
+}

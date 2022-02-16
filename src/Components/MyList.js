@@ -2,9 +2,7 @@ import wheelchair from '../images/iconwheelchair.png'
 import transsymbol from '../images/icontransgender.png'
 import child from '../images/iconchild.png'
 
-const MyList = ({ restroomList, soloRestroom, handleRemoveRestroomList }) => {
-
-    // useState from App.js to add and remove
+const MyList = ({ restroomList, handleRemoveRestroomList }) => {
 
     const populateList = restroomList.map((restroom, id) => {
         return (

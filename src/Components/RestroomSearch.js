@@ -56,6 +56,7 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
         }
     }
 
+    // mapping through the data array
     const restroomList = restrooms.map((restroom, id) => (
         <li className="restroom-list-item" key={id} >
             {/* On-click toggle will toggle the RestroomDetailCard Component */}
@@ -66,8 +67,7 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
         </li>
     ))
     console.log(toggle)
-      return (
-        
+      return (        
         <div className="search-container">
           <h1 className="header-text-search">Restroom Resource: Find All-Gender Restrooms</h1>
           <form className="search-form" onSubmit={handleSubmit}>

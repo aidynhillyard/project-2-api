@@ -1,4 +1,4 @@
-![Gif of two people holding trans pride signs](/src/images/ourtimeisnow.gif)
+![Animated gif with art of two people of color holding trans pride signs that read 'our time is now' and 'for trans lives'](/src/images/ourtimeisnow.gif)
 
 # Project Overview
 
@@ -8,7 +8,7 @@
 
 ## Project Description
 
-For this project, I plan to make a resource to locate and save all-gender bathrooms.  Users will be able to use a form to put in their location, which will return a list of all-gender bathrooms in that area.  Users can then click on an item in the results to obtain more information (exact address, whether the bathroom is also ADA accessible and/or has a changing table).  From that information, users can save the bathroom to their list of locations, which can be accessed through a separate route.
+This project is a resource to locate and save all-gender bathrooms.  Users can use a form to put in their location, which returns a list of all-gender bathrooms in that area.  Users can then click on an item in the results to obtain more information (exact address, whether the bathroom is also ADA accessible and/or has a changing table).  From that information, users can save the bathroom to their list of locations, which can be accessed through a separate route.  The saved list contains additional information, such as specific directions or comments, when applicable.
 
 ## API
 
@@ -52,18 +52,20 @@ For this project, I plan to make a resource to locate and save all-gender bathro
 
 #### MVP
 
-- Fully functional restroom search by city
-	- User inputs city name
+- Fully functional restroom search by keyword
+	- User inputs keyword (e.g., name of city or state)
 	- Search returns result list
 - Clicking an item in the results list populates a card with additional details
 - Card has a button to Add to My List, which adds the result to the My List route
-- My List page displays all results added to the My List, in card format, with a button to remove
+- My List route displays all results added to the My List, in card format, with a button to remove
 - Navbar with options that link to their corresponding routes
 
 #### PostMVP
 
 - "About" route that leads to an explanation of why all-gender bathrooms are important
-- More specific search functionality (instruct users to input city and state, not just city)
+- Additional instructions for obtaining more specific search results
+- Clear search results button
+- My List card contains additional information
 
 ## Components
 
@@ -93,12 +95,12 @@ Unless otherwise noted, time is listed in hours:
 | Create My List card | H | 2 | 1 |
 | CSS for Restroom Search page | H | 4 | 3 |
 | CSS for My List page | H | 2 | 1 |
-| Create "About" page with more info | L | 2 | |
-| Change search to take in both city and state | L | 4 | |
+| Create "About" page with more info | L | 2 | 2 |
+| Add search functionality for loading and clear search | L | 4 | 4 |
 | Total | H | 32 | |
 
 ## Additional Libraries
-TBD
+N/A
 
 ## Citations of Outside Sources
 
@@ -119,7 +121,7 @@ I followed this guide [link](https://stackoverflow.com/questions/39999367/how-do
 Here are some brief code snippets of functionality that I'm proud of and a brief description.
 
 Using `useEffect` to set up `localStorage` to store form data between routes:
-```
+```js
 useEffect(()=>{
 
         const restroomData = localStorage.getItem('restroomData')
@@ -136,7 +138,19 @@ useEffect(()=>{
         
         })
 ```
-...
-```
 
+Using ternary statements to show/hide text and icons
+```js
+ <div className="list-card" key={id}>
+                <li className="li-my-list, bold">{restroom.name}</li>
+                <li className="li-my-list">{restroom.street}</li>
+                <li className="li-my-list">{restroom.city}</li>
+                <li className="li-my-list">{restroom.state}</li>
+                <li className="li-my-list">{restroom.directions ? "Directions: " + restroom.directions : ''}</li>
+                <li className="li-my-list">{restroom.comment ? "Comment: " + restroom.comment : ''}</li>
+                <div className="icon-container">
+                    <img src={wheelchair} alt="Icon of an active wheelchair user" className="card-icon" title="Accessible" style={{ display: (restroom.accessible === true) ? "block" : "none" }} />
+                    <img src={transsymbol} alt="Icon of the transgender symbol" className="card-icon" title="Unisex / Gender Neutral" style={{ display: (restroom.unisex === true) ? "block" : "none" }} />
+                    <img src={child} alt="Icon of a child" className="card-icon" title="Changing Table" style={{ display: (restroom.changing_table === true) ? "block" : "none" }} />
+                </div>
 ```
