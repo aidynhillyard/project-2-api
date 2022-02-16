@@ -55,7 +55,7 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
           <form className="search-form" onSubmit={handleSubmit}>
             <label>Keyword: </label>
             <input id="input" type="text" placeholder="Enter a city or state" value={keyword} onChange={handleChange} />
-            <input type="submit" value="Find Restroom Info" />
+            <input type="submit" value="Find Restroom Info" className="purple-button"/>
           </form>
           <div className="restroom-search">
             <ul className="full-restroom-list">{restroomList}</ul>

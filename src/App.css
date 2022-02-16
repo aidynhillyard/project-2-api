@@ -71,10 +71,6 @@ ul {
 
 #header-img {
   height: 7vh;
-  display: grid;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  align-self: end;
 }
 
 #nav-restroom-search {
@@ -88,6 +84,13 @@ ul {
 
 #about-text {
   font-size: 1.2em;
+}
+
+#nav-about {
+  display: grid;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  align-self: end;
 }
 
 #nav-mylist {
@@ -175,11 +178,11 @@ label {
   padding: 0.6vh;
 }
 
-.detail-card-add-button {
+.purple-button {
   background-color: #6600cc;
   color: white;
   border-radius: 0.7vh;
-  padding: 0.5vh 0vh;
+  padding: 0.5vh;
 }
 
 .full-restroom-list {
@@ -232,6 +235,8 @@ M Y - L I S T
 
 .bold {
   font-weight: 900;
+  font-size: 1.25em;
+  padding: 1.5vh;
 }
 
 /*
