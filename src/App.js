@@ -1,7 +1,13 @@
-import { Route, Link, Routes, Navigate } from "react-router-dom";
+// Import: React
+import { Route, Routes, Navigate } from "react-router-dom";
 import { useState } from "react";
+
+// Import CSS and Font
 import "./App.css";
 import "./responsive.css";
+import "@fontsource/bubbler-one";
+
+// Import Components
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import RestroomSearch from "./Components/RestroomSearch";
