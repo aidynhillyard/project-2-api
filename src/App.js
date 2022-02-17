@@ -33,14 +33,14 @@ function App() {
       <Header />
       <main>
       <Routes>
-          <Route path="/restroomresource" element={<RestroomSearch handleAddRestroomList={handleAddRestroomList} />} />
+          <Route path="/restroomsearch" element={<RestroomSearch handleAddRestroomList={handleAddRestroomList} />} />
           <Route path="/about" element={<About />} />
           {/* The :name is a parameter we can now store */}
           <Route path="/restroomsearch/:name" element={<RestroomSearch handleAddRestroomList={handleAddRestroomList}/>} />
           <Route path="/mylist" element={<MyList restroomList={restroomList} handleRemoveRestroomList={handleRemoveRestroomList}/>} />
           <Route path="/" element = {<Navigate to="/restroomresource" />} />
-          <Route path="/restroom-resource" element = {<Navigate to="/restroomresource" />} />
-          <Route path="/search" element = {<Navigate to="/restroomresource" />} />
+          <Route path="/restroom-search" element = {<Navigate to="/restroomsearch" />} />
+          <Route path="/search" element = {<Navigate to="/restroomsearch" />} />
         </Routes>
       </main>
       {/* Footer has name and social media icons */}

@@ -7,7 +7,7 @@ const Header = () => {
         <div className="header">
             <nav>
                 <ul id="ul-nav">
-                    <Link to="/restroomresource" id="nav-restroom-search"><li className="header-li">Restroom Search</li></Link>
+                    <Link to="/restroomsearch" id="nav-restroom-search"><li className="header-li">Restroom Search</li></Link>
                     <div id="nav-about">
                         <img src={header} alt="The transgender symbol" id="header-img" /><Link to="/about"><li id="about-text" className="header-li">About</li></Link>
                     </div>
