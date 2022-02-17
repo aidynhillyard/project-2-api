@@ -75,7 +75,7 @@ function App() {
               />
             }
           />
-          <Route path="/" element={<Navigate to="/restroomresource" />} />
+          <Route path="/" element={<Navigate to="/restroomsearch" />} />
           <Route
             path="/restroom-search"
             element={<Navigate to="/restroomsearch" />}
