@@ -66,6 +66,7 @@ This project is a resource to locate and save all-gender bathrooms.  Users can u
 - Additional instructions for obtaining more specific search results
 - Clear search results button
 - My List card contains additional information
+- Loading component shows/hides during fetch request
 
 ## Components
 
@@ -88,7 +89,7 @@ Unless otherwise noted, time is listed in hours:
 | --- | :---: |  :---: | :---: |
 | Create React app and files for all components | H | 2 | 1.5 |
 | Basic Navbar & Footer | H | 2 | 1 |
-| Set up basic React routing | H | 1 | 30 min |
+| Set up basic React routing | H | 1 | 0.5 |
 | Make restroom API call through search form, parse important data | H | 4 | 3 |
 | Display results | H | 3 | 2 |
 | Create detailed results card | H | 3 | 4 |
@@ -96,8 +97,8 @@ Unless otherwise noted, time is listed in hours:
 | CSS for Restroom Search page | H | 4 | 3 |
 | CSS for My List page | H | 2 | 1 |
 | Create "About" page with more info | L | 2 | 2 |
-| Add search functionality for loading and clear search | L | 4 | 4 |
-| Total | H | 32 | |
+| Add search functionality for loading and clear search | L | 4 | 6 |
+| Total | H | 32 | 25 |
 
 ## Additional Libraries
 N/A
@@ -115,6 +116,10 @@ To save the data from the form submit when changing between my routes, I followe
 ### Case 3: Using images in React
 
 I followed this guide [link](https://stackoverflow.com/questions/39999367/how-do-i-reference-a-local-image-in-react) to import images into React in order to use local images instead of internet hosting.
+
+### Case 4: Implementing a Loading component
+
+To implement a Loading component that shows during the fetch request but hides after the api fetches the data, I followed this guide from BaseFactor [link](https://www.basefactor.com/react-how-to-display-a-loading-indicator-on-fetch-calls)
 
 ## Code Snippet
 
@@ -153,4 +158,17 @@ Using ternary statements to show/hide text and icons
         <img src={transsymbol} alt="Icon of the transgender symbol" className="card-icon" title="Unisex / Gender Neutral" style={{ display: (restroom.unisex === true) ? "block" : "none" }} />
         <img src={child} alt="Icon of a child" className="card-icon" title="Changing Table" style={{ display: (restroom.changing_table === true) ? "block" : "none" }} />
     </div>
+```
+
+Using `useState` to show/hide a Loading component
+```js
+    setLoading(!loading)
+
+    const url = `https://www.refugerestrooms.org/api/v1/restrooms/search?page=1&per_page=45&offset=0&query=${keyword}`;
+
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {setRestrooms(data)
+      setLoading(loading)})
+      .catch(() => setError("API failed; try again later."));
 ```
