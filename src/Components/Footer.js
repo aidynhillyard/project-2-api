@@ -9,7 +9,7 @@ const Footer = () => {
         <a href="https://github.com/aidynhillyard">
           <img src={github} alt="GitHub icon" className="social-media-icon" />
         </a>
-        <a href="mailto:aidyn.hillyard@gmail.com?subject=AidynHillyard.com&body=Message">
+        <a href="mailto:aidyn.hillyard@gmail.com?subject=RestroomResource&body=Message">
           <img src={email} alt="Envelope icon" className="social-media-icon" />
         </a>
         <a href="https://www.linkedin.com/in/aidynhillyard">

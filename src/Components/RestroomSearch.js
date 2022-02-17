@@ -4,7 +4,7 @@ import Loading from "./Loading";
 
 const RestroomSearch = ({ handleAddRestroomList }) => {
   // useStates
-  const [toggle, setToggle] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [keyword, setKeyword] = useState("");
   const [restrooms, setRestrooms] = useState([]);
   const [restroomId, setRestroomId] = useState("");
@@ -16,7 +16,7 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
     if (restroomData) {
       setRestrooms(JSON.parse(restroomData));
     }
-  }, []);
+  }, [loading]);
 
   useEffect(() => {
     localStorage.setItem("restroomData", JSON.stringify(restrooms));
@@ -25,20 +25,20 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
   // handleSubmit
   const handleSubmit = (event) => {
     event.preventDefault();
+    setLoading(!loading)
 
     const url = `https://www.refugerestrooms.org/api/v1/restrooms/search?page=1&per_page=45&offset=0&query=${keyword}`;
 
     fetch(url)
       .then((response) => response.json())
-      .then((data) => setRestrooms(data))
+      .then((data) => {setRestrooms(data)
+      setLoading(loading)})
       .catch(() => setError("API failed; try again later."));
 
     if (error) {
       return <h1>{error}</h1>;
     }
     return <button onClick={handleSubmit}>Click Me</button>;
-
-    handleLoading();
   };
 
   // handleChange
@@ -52,19 +52,10 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
     setKeyword("");
   };
 
-  // handleLoading
-  const handleLoading = () => {
-    if (restrooms === []) {
-      setToggle(!toggle);
-    } else {
-      setToggle(toggle);
-    }
-  };
-
   // mapping through the data array
   const restroomList = restrooms.map((restroom, id) => (
     <li className="restroom-list-item" key={id}>
-      {/* On-click toggle will toggle the RestroomDetailCard Component */}
+      {/* On-click toggle will change the RestroomDetailCard Component */}
       <a
         onClick={(event) => {
           setRestroomId(id);
@@ -106,7 +97,7 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
 
       <div
         className="loading-container"
-        style={{ display: toggle ? "block" : "none" }}
+        style={{ display: loading ? "block" : "none" }}
       >
         <Loading />
       </div>
@@ -119,6 +110,7 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
           handleAddRestroomList={handleAddRestroomList}
           restrooms={restrooms}
           restroomId={restroomId}
+
         />
       </div>
     </div>
