@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/restroomresource/static/css/main.417e1c38.css",
-    "main.js": "/restroomresource/static/js/main.e6f5aed8.js",
+    "main.css": "/restroomresource/static/css/main.1243fb8b.css",
+    "main.js": "/restroomresource/static/js/main.f13af581.js",
     "static/js/787.8761912a.chunk.js": "/restroomresource/static/js/787.8761912a.chunk.js",
     "static/media/transgendersymbolheader.png": "/restroomresource/static/media/transgendersymbolheader.d970ad267f379bfb5c93.png",
     "static/media/bubbler-one-all-400-normal.woff": "/restroomresource/static/media/bubbler-one-all-400-normal.98d572ce9d76ea132c5a.woff",
@@ -10,12 +10,12 @@
     "static/media/bubbler-one-latin-400-normal.woff2": "/restroomresource/static/media/bubbler-one-latin-400-normal.3071d55c73a3d07569ff.woff2",
     "static/media/bubbler-one-latin-ext-400-normal.woff2": "/restroomresource/static/media/bubbler-one-latin-ext-400-normal.46b27beb48690f13a775.woff2",
     "index.html": "/restroomresource/index.html",
-    "main.417e1c38.css.map": "/restroomresource/static/css/main.417e1c38.css.map",
-    "main.e6f5aed8.js.map": "/restroomresource/static/js/main.e6f5aed8.js.map",
+    "main.1243fb8b.css.map": "/restroomresource/static/css/main.1243fb8b.css.map",
+    "main.f13af581.js.map": "/restroomresource/static/js/main.f13af581.js.map",
     "787.8761912a.chunk.js.map": "/restroomresource/static/js/787.8761912a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.417e1c38.css",
-    "static/js/main.e6f5aed8.js"
+    "static/css/main.1243fb8b.css",
+    "static/js/main.f13af581.js"
   ]
 }
