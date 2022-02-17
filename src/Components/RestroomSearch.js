@@ -4,9 +4,9 @@ import Loading from "./Loading";
 
 const RestroomSearch = ({ handleAddRestroomList }) => {
   // useStates
-  const [loading, setLoading] = useState(false);
   const [keyword, setKeyword] = useState("");
   const [restrooms, setRestrooms] = useState([]);
+  const [loading, setLoading] = useState(false);
   const [restroomId, setRestroomId] = useState("");
   const [error, setError] = useState(null);
 
@@ -25,14 +25,16 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
   // handleSubmit
   const handleSubmit = (event) => {
     event.preventDefault();
-    setLoading(!loading)
+    setLoading(!loading);
 
     const url = `https://www.refugerestrooms.org/api/v1/restrooms/search?page=1&per_page=45&offset=0&query=${keyword}`;
 
     fetch(url)
       .then((response) => response.json())
-      .then((data) => {setRestrooms(data)
-      setLoading(loading)})
+      .then((data) => {
+        setRestrooms(data);
+        setLoading(loading);
+      })
       .catch(() => setError("API failed; try again later."));
 
     if (error) {
@@ -55,7 +57,6 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
   // mapping through the data array
   const restroomList = restrooms.map((restroom, id) => (
     <li className="restroom-list-item" key={id}>
-      {/* On-click toggle will change the RestroomDetailCard Component */}
       <a
         onClick={(event) => {
           setRestroomId(id);
@@ -102,15 +103,11 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
         <Loading />
       </div>
       <div className="restroom-search">
-        <ul className="full-restroom-list">
-          {restroomList}
-          {/* <p className="instructions">For more relevant results, enter specific keywords, such as a city or state.</p> */}
-        </ul>
+        <ul className="full-restroom-list">{restroomList}</ul>
         <RestroomDetailCard
           handleAddRestroomList={handleAddRestroomList}
           restrooms={restrooms}
           restroomId={restroomId}
-
         />
       </div>
     </div>

@@ -15,7 +15,7 @@ This project is a resource to locate and save all-gender bathrooms.  Users can u
 [RefugeRestrooms](https://www.refugerestrooms.org/api/docs/)
 
 
-```
+```js
 {
     "id": 55788,
     "name": "The C.H.A.P Store",

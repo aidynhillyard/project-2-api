@@ -6,7 +6,7 @@ const MyList = ({ restroomList, handleRemoveRestroomList }) => {
   const populateList = restroomList.map((restroom, id) => {
     return (
       <div className="list-card" key={id}>
-        <li className="li-my-list, bold">{restroom.name}</li>
+        <li className="li-my-list, bold">{restroom.name} </li>
         <li className="li-my-list">{restroom.street}</li>
         <li className="li-my-list">{restroom.city}</li>
         <li className="li-my-list">{restroom.state}</li>
