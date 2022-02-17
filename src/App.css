@@ -159,6 +159,19 @@ label {
   padding: 2vh 0vh;
 }
 
+.list-button {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  cursor: pointer;
+  font-family: "Bubbler One", sans-serif;
+  font-size: 1em;
+}
+
+.list-button:hover {
+  text-decoration: underline;
+}
+
 .restroom-detail-card {
   margin: 3vh 3vh;
   border: 0.3vh solid #a64dff;

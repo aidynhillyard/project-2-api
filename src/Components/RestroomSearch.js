@@ -57,14 +57,14 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
   // mapping through the data array
   const restroomList = restrooms.map((restroom, id) => (
     <li className="restroom-list-item" key={id}>
-      <a
+      <button className="list-button"
         onClick={(event) => {
           setRestroomId(id);
         }}
         key={id}
       >
         {restroom.name}
-      </a>
+      </button>
     </li>
   ));
 
