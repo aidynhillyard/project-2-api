@@ -21,7 +21,7 @@ const Footer = () => {
         </a>
       </div>
       <p>
-        Designed and coded by Aidyn Hillyard (zie/hir/hirs), 2022. Restroom data
+        Designed and coded by <a href="https://aidynhillyard.github.io/">Aidyn Hillyard</a> (zie/hir/hirs), 2022. Restroom data
         from <a href="https://www.refugerestrooms.org/">Refuge Restrooms</a>.
       </p>
     </div>

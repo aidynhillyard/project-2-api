@@ -196,10 +196,15 @@ label {
 }
 
 .purple-button {
+  font-family: "Bubbler One", sans-serif;
+  font-weight: 900;
+  font-size: 1em;
   background-color: #6600cc;
   color: white;
+  border: none;
   border-radius: 0.7vh;
-  padding: 0.5vh;
+  padding: 0.7vh;
+  cursor: pointer;
 }
 
 .full-restroom-list {

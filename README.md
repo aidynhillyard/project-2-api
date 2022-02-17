@@ -115,11 +115,15 @@ To save the data from the form submit when changing between my routes, I followe
 
 ### Case 3: Using images in React
 
-I followed this guide [link](https://stackoverflow.com/questions/39999367/how-do-i-reference-a-local-image-in-react) to import images into React in order to use local images instead of internet hosting.
+I followed this guide to import images into React in order to use local images instead of internet hosting: [link](https://stackoverflow.com/questions/39999367/how-do-i-reference-a-local-image-in-react)
 
 ### Case 4: Implementing a Loading component
 
-To implement a Loading component that shows during the fetch request but hides after the api fetches the data, I followed this guide from BaseFactor [link](https://www.basefactor.com/react-how-to-display-a-loading-indicator-on-fetch-calls)
+To implement a Loading component that shows during the fetch request but hides after the api fetches the data, I followed this guide from BaseFactor: [link](https://www.basefactor.com/react-how-to-display-a-loading-indicator-on-fetch-calls)
+
+### Case 5: Styling a button in CSS to look like a link
+
+For accessibility, I changed the `a` tag in the RestroomSearch to a button and use this guide to style it to look like a link: [link](https://stackoverflow.com/questions/1367409/how-to-make-button-look-like-a-link)
 
 ## Code Snippet
 

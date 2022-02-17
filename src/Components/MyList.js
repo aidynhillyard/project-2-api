@@ -45,7 +45,7 @@ const MyList = ({ restroomList, handleRemoveRestroomList }) => {
           className="purple-button"
           onClick={() => handleRemoveRestroomList(restroom)}
         >
-          Remove from list
+          Remove From List
         </button>
       </div>
     );
