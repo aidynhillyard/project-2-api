@@ -1,6 +1,7 @@
 import wheelchair from "../images/iconwheelchair.png";
 import transsymbol from "../images/icontransgender.png";
 import child from "../images/iconchild.png";
+import ListMessage from "./ListMessage";
 
 const MyList = ({ restroomList, handleRemoveRestroomList }) => {
   const populateList = restroomList.map((restroom, id) => {
@@ -54,7 +55,7 @@ const MyList = ({ restroomList, handleRemoveRestroomList }) => {
   return (
     <div className="my-list">
       <h1 className="header-text">Restroom Resource: My List of Restrooms</h1>
-      <div className="list-card-container">{populateList}</div>
+      <div className="list-card-container">{restroomList.length === 0 ? <ListMessage /> : populateList}</div>
     </div>
   );
 };

@@ -47,6 +47,10 @@ R E S P O N S I V E - T A B L E T
     }
   
     /* Restroom Search */
+
+    input {
+      padding: 0.7vh;
+    }
   
     .restroom-detail-card {
         max-width: 48vh;

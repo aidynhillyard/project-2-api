@@ -125,6 +125,10 @@ To implement a Loading component that shows during the fetch request but hides a
 
 For accessibility, I changed the `a` tag in the RestroomSearch to a button and use this guide to style it to look like a link: [link](https://stackoverflow.com/questions/1367409/how-to-make-button-look-like-a-link)
 
+### Case 6: Getting Firefox to recognize input focus color
+
+I changed the input focus color to match my color scheme, but Firefox was not registering the change.  I followed this guide to add `outline-style: solid` to the CSS: [link](https://stackoverflow.com/questions/67667161/is-css-outline-color-property-is-not-working-in-firefox-e-g-inputfocus-ou)
+
 ## Code Snippet
 
 Here are some brief code snippets of functionality that I'm proud of and a brief description.

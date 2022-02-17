@@ -15,10 +15,10 @@ import MyList from "./Components/MyList";
 import About from "./Components/About";
 
 function App() {
-  // This sets the useState
+  // useStates
   const [restroomList, setRestroomList] = useState([]);
 
-  // This adds an All-Gender Restroom to the user's list (My List)
+  // Adds a restroom to the user's list (MyList)
   const handleAddRestroomList = (
     name,
     street,

@@ -125,7 +125,7 @@ main {
 }
 
 input {
-  padding: 0.5vh;
+  padding: 0.9vh;
   margin: 0.5vh;
   border: 0.2vh solid black;
   border-radius: 0.5vh;
@@ -133,10 +133,12 @@ input {
 
 input:focus {
   outline-color: #a64dff;
+  outline-style: solid;
 }
 
 textarea:focus {
   outline-color: #a64dff;
+  outline-style: solid;
 }
 
 label {
