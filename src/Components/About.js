@@ -14,7 +14,7 @@ const About = () => {
       </p>
       <p className="about">
         According to the{" "}
-        <a href="https://transequality.org/sites/default/files/docs/resources/NTDS_Report.pdf" target="_blank">
+        <a href="https://transequality.org/sites/default/files/docs/resources/NTDS_Report.pdf" target="_blank" rel="noopener noreferrer">
           2012 National Transgender Discrimination Study
         </a>
         , more than 1 in 4 students and nearly 1 in 4 employees reported being
@@ -31,7 +31,7 @@ const About = () => {
         Restroom Resource pulls data from the Refuge Restrooms API. This data is
         self-reported from people like you, which means it can have variations
         and inaccuracies. If you see inaccurate data, please visit{" "}
-        <a href="https://www.refugerestrooms.org" target="_blank">Refuge Restrooms</a> to report
+        <a href="https://www.refugerestrooms.org" target="_blank" rel="noopener noreferrer">Refuge Restrooms</a> to report
         it.
       </p>
     </div>

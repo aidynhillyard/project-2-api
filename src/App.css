@@ -51,6 +51,7 @@ H E A D E R
 .header-li {
   font-size: 1.5em;
   font-weight: 900;
+  align-self: end;
 }
 
 ul {
@@ -83,6 +84,9 @@ ul {
 }
 
 #about-text {
+  display: flex;
+  flex-direction: column;
+  align-self: end;
   font-size: 1.2em;
 }
 
