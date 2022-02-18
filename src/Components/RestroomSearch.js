@@ -16,7 +16,7 @@ const RestroomSearch = ({ handleAddRestroomList }) => {
     if (restroomData) {
       setRestrooms(JSON.parse(restroomData));
     }
-  }, [loading]);
+  }, []);
 
   useEffect(() => {
     localStorage.setItem("restroomData", JSON.stringify(restrooms));

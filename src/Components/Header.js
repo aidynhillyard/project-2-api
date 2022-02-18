@@ -11,14 +11,14 @@ const Header = () => {
             Restroom Search
           </Link>
           </li>
-          <div id="nav-about">
-            <li id="about-text" className="header-li">
+          <li id="about-text" className="header-li">
+            <div id="nav-about">
               <img src={header} alt="The transgender symbol" id="header-img" />
               <Link to="/about">
                 About
               </Link>
+              </div>
             </li>
-          </div>
             <li className="header-li">
               <Link to="/mylist" id="nav-mylist">
                 My Restroom List
