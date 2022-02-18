@@ -6,13 +6,13 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="social-media-container">
-        <a href="https://github.com/aidynhillyard">
+        <a href="https://github.com/aidynhillyard" target="_blank">
           <img src={github} alt="GitHub icon" className="social-media-icon" />
         </a>
         <a href="mailto:aidyn.hillyard@gmail.com?subject=RestroomResource&body=Message">
           <img src={email} alt="Envelope icon" className="social-media-icon" />
         </a>
-        <a href="https://www.linkedin.com/in/aidynhillyard">
+        <a href="https://www.linkedin.com/in/aidynhillyard" target="_blank">
           <img
             src={linkedin}
             alt="LinkedIn icon"
@@ -21,8 +21,8 @@ const Footer = () => {
         </a>
       </div>
       <p>
-        Designed and coded by <a href="https://aidynhillyard.github.io/">Aidyn Hillyard</a> (zie/hir/hirs), 2022. Restroom data
-        from <a href="https://www.refugerestrooms.org/">Refuge Restrooms</a>.
+        Designed and coded by <a href="https://aidynhillyard.github.io/" target="_blank">Aidyn Hillyard</a> (zie/hir/hirs), 2022. Restroom data
+        from <a href="https://www.refugerestrooms.org/" target="_blank">Refuge Restrooms</a>.
       </p>
     </div>
   );
