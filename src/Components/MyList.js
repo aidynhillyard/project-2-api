@@ -55,7 +55,9 @@ const MyList = ({ restroomList, handleRemoveRestroomList }) => {
   return (
     <div className="my-list">
       <h1 className="header-text">Restroom Resource: My List of Restrooms</h1>
-      <div className="list-card-container">{restroomList.length === 0 ? <ListMessage /> : populateList}</div>
+      <div className="list-card-container">
+        {restroomList.length === 0 ? <ListMessage /> : populateList}
+      </div>
     </div>
   );
 };

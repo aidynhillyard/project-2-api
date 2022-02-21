@@ -6,13 +6,21 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="social-media-container">
-        <a href="https://github.com/aidynhillyard" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/aidynhillyard"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={github} alt="GitHub icon" className="social-media-icon" />
         </a>
         <a href="mailto:aidyn.hillyard@gmail.com?subject=RestroomResource&body=Message">
           <img src={email} alt="Envelope icon" className="social-media-icon" />
         </a>
-        <a href="https://www.linkedin.com/in/aidynhillyard" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.linkedin.com/in/aidynhillyard"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             src={linkedin}
             alt="LinkedIn icon"
@@ -21,8 +29,23 @@ const Footer = () => {
         </a>
       </div>
       <p>
-        Designed and coded by <a href="https://aidynhillyard.github.io/" target="_blank" rel="noopener noreferrer">Aidyn Hillyard</a> (zie/hir/hirs), 2022. Restroom data
-        from <a href="https://www.refugerestrooms.org/" target="_blank" rel="noopener noreferrer">Refuge Restrooms</a>.
+        Designed and coded by{" "}
+        <a
+          href="https://aidynhillyard.github.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Aidyn Hillyard
+        </a>{" "}
+        (zie/hir/hirs), 2022. Restroom data from{" "}
+        <a
+          href="https://www.refugerestrooms.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Refuge Restrooms
+        </a>
+        .
       </p>
     </div>
   );
