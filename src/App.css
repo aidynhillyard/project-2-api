@@ -211,6 +211,17 @@ label {
   border-radius: 0.7vh;
   padding: 0.7vh;
   cursor: pointer;
+  box-shadow: 0 0.5vh #999;
+}
+
+.purple-button:hover {
+  background-color:#a64dff;
+}
+
+.purple-button:active {
+  background-color:#cc99ff;
+  box-shadow: 0 0.2vh #666;
+  transform: translateY(0.1vh);
 }
 
 .full-restroom-list {
