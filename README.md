@@ -2,9 +2,9 @@
 
 # Project Overview
 
-## Project Links
+## Project Link
 
-- Placeholder for GitHub link when live
+- [Restroom Resource](https://aidynhillyard.github.io/restroomresource)
 
 ## Project Description
 
